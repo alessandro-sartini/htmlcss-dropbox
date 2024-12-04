@@ -60,15 +60,16 @@ li{
     padding-block: 80px;
     margin: 0 auto;
     max-width: 80%; 
+    height: 1200px;
 }
 .container-side{
-    flex-basis: calc(100% / 2);
    padding-block:100px ;
 }
-.dimension{
-    height: 400px;
-    aspect-ratio: 2;
-}
 .text{
-    flex-basis: 30%;  
+    flex-basis: 30%;
+}
+.container figure{
+    flex-basis: 70%;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
 }
