@@ -50,6 +50,7 @@ li{
     flex-basis: calc(100% / 2 - 20px);
 }
 .btn-drop{
+    
     border: none;
     padding-inline: 30px;
     padding-block: 10px;
@@ -63,7 +64,7 @@ li{
 }
 
 .container-h{
-    padding-top: 80px;   
+    padding-top: 100px;   
     margin: 0 auto;
     max-width: 80%; 
     text-align: center;
@@ -89,7 +90,7 @@ li{
 }
 
 .jumbo{
-    bottom: -30px;
+    bottom: 10px;
     position: relative;
     height: 500px;
     flex-basis: 60%;
@@ -126,19 +127,39 @@ hr{
     max-width: 70%;
 }
 .radio-container, h2{
+
     padding: 80px;
+}
+.radio-container{
+    gap: 20px;
 }
 .colonne{
    
     justify-content: space-around;
 }
 .colonna{
-    text-align: center;
-    flex-basis: calc(100% / 3);
+    padding-left: 20px;
+    gap: 50px;
+    border: 1px solid grey;
+    text-align: left;
+    flex-basis: calc(100% / 3 - 150px);
+    padding-bottom: 20px;
 }
-div > span:first-of-type{
-    border: 1px solid var(--grey);
-}
+
 p > span:first-of-type{
     color: gray;
+}
+.btn-inizia{
+    padding-inline: 80px;
+    padding-block: 20px;
+    border: none;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    background-color: var(--blue-box);
+}
+#section-link > .colonna.flex-column > span:first-of-type {    border-bottom: 1px solid var(--grey);
+    margin: 0 auto;
+    padding: 5px;
+    /* text-align: center; */
 }
