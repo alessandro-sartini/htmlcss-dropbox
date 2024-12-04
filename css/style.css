@@ -75,7 +75,8 @@ li{
    
 }
 .container-side{
-   padding:100px ;
+   padding-top:100px ;
+
    position: relative;
   
 }
@@ -88,7 +89,7 @@ li{
 }
 
 .jumbo{
-    bottom: -10px;
+    bottom: -30px;
     position: relative;
     height: 500px;
     flex-basis: 60%;
@@ -97,18 +98,47 @@ li{
     max-width: 100%;
 }
 .start{
-    height: 700px;
+    height: 750px;
     background-color: var(--bk-blue);
 }
-.flex-column{
+.padding{
     padding-top: 40px;
+}
+.flex-column{
+   
     gap: 40px;
     display: flex;
     flex-direction: column;
 }
 .arrow{
-    height: 100px;
-    aspect-ratio: 1;
+    font-size: 70px;
     position: absolute;
-   bottom: 60px;
+     bottom: 70px;
+     text-decoration: none;
+     color: black;
+}
+hr{
+    color: var(--grey);
+}
+.container-70{
+    margin: 0 auto;
+    /* padding-top: 150px; */
+    max-width: 70%;
+}
+.radio-container, h2{
+    padding: 80px;
+}
+.colonne{
+   
+    justify-content: space-around;
+}
+.colonna{
+    text-align: center;
+    flex-basis: calc(100% / 3);
+}
+div > span:first-of-type{
+    border: 1px solid var(--grey);
+}
+p > span:first-of-type{
+    color: gray;
 }
