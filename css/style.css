@@ -5,6 +5,9 @@
     --black-foot:#000000;
     --hed-bk:#FFFFFF;
 }
+main{
+    padding-top: 100px;
+}
 ul {
     list-style-type: none;
 }
@@ -13,6 +16,10 @@ ul {
     flex-wrap: wrap;
 }
 .container-header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
     align-items: center;
     height: 100px;
     justify-content: space-between;
@@ -35,7 +42,6 @@ li{
     flex-direction: row;
 }
 .container-header a{
-    position: sticky;
     text-decoration: none;
     color: black;
 }
@@ -55,21 +61,54 @@ li{
     padding-block: 10px;
     background-color: var(--hed-bk);
 }
-.container{
-    /* flex-direction: column; */
-    padding-block: 80px;
+
+.container-h{
+    padding-top: 80px;   
     margin: 0 auto;
     max-width: 80%; 
-    height: 1200px;
+    text-align: center;
+  
+}
+.container{
+    margin: 0 auto;
+    max-width: 80%; 
+   
 }
 .container-side{
-   padding-block:100px ;
+   padding:100px ;
+   position: relative;
+  
 }
 .text{
-    flex-basis: 30%;
+    /* flex-direction: column; */
+    /* flex-basis: 30%; */
+    width: 30%;
+    height: 250px;
+    padding-block: 20px;
 }
-.container figure{
-    flex-basis: 70%;
-    background-image: url(../img/jumbo.png);
-    background-size: cover;
+
+.jumbo{
+    bottom: -10px;
+    position: relative;
+    height: 500px;
+    flex-basis: 60%;
+}
+.dimension{
+    max-width: 100%;
+}
+.start{
+    height: 700px;
+    background-color: var(--bk-blue);
+}
+.flex-column{
+    padding-top: 40px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.arrow{
+    height: 100px;
+    aspect-ratio: 1;
+    position: absolute;
+   bottom: 60px;
 }
