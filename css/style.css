@@ -281,3 +281,12 @@ p > span:first-of-type{
     padding-bottom: 3em;
     text-align: center;
 }
+.final-main{
+    padding-block: 7em;
+}
+.final-main > a{
+    padding-block: 4em;
+}
+.final-main > h3{
+    padding-block: 4em;
+}
