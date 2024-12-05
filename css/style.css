@@ -180,7 +180,8 @@ p > span:first-of-type{
     border-bottom: 1px solid var(--grey);
 }
 .contatti{
-    padding: 2em;
+    padding-top: 2em;
+    padding-inline: 2em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -204,4 +205,79 @@ p > span:first-of-type{
 .colonna-100 > span, 
 .colonna-100 > p{
     flex-basis: 50%;
+}
+.text-column{
+    max-width: 50%;
+  padding-left: 2em;
+  
+}
+
+.text-column span {
+    line-height: 6; /* Aumenta l'interlinea (1.5 è il valore standard) */
+    margin-bottom: 10px; /* Aggiungi spazio tra lo <span> e il <p> */
+}
+.split{
+    padding-block: 5em;
+    display: flex;
+    gap: 2em;
+
+}
+.img-partner{
+
+    flex-basis: 65%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    margin: 4em;
+    gap: 2em;
+}
+.partner{
+    max-width: 100%;
+}
+.btn-partner{
+    background-color: none;
+    border: 1px solid black;
+    color: black;
+    max-width: 9em;
+    padding: 10px 20px;
+
+}
+.sezione-link{
+    gap: 2em;
+    max-width: 100%;
+    text-align: center;
+}
+
+.cards{
+   
+    flex-basis: calc(100% / 3 - 2em);
+}
+
+.img-link-container{
+    flex-basis: 50%;
+}
+.card{
+    flex-direction: column;
+}
+.img-link{
+    max-width: 70%;
+}
+.sezione-link div:first-child{
+    display: inline;
+}
+.card> p{
+    margin-right: 3em;
+    padding-top: 2em;
+    text-align: left;
+}
+.card> h4{
+    padding-top: 1em;
+    text-align: left;
+}
+.title{
+    font-size: 50px;
+    padding-bottom: 3em;
+    text-align: center;
 }
