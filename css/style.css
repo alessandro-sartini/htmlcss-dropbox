@@ -1,3 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Geist+Mono:wght@100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+   
+    font-family: "Open Sans";
+}
+h3, h4{
+   text-transform: capitalize;
+}
+
 :root{
     --blue-box:#0062FE;
     --bk-blue:#B4D0E6;
@@ -31,7 +41,7 @@ ul {
 .menu{
     gap: 20px;
 }
-li{
+nav > ul > li{
     text-transform: capitalize;
     padding-inline: 40px;
     align-self: center;
@@ -75,8 +85,11 @@ li{
     max-width: 80%; 
    
 }
+h1{
+    font-size: 3rem;
+}
 .container-side{
-   padding-top:100px ;
+   padding-top:2em ;
 
    position: relative;
   
@@ -90,7 +103,7 @@ li{
 }
 
 .jumbo{
-    bottom: 10px;
+    bottom: -3em;
     position: relative;
     height: 500px;
     flex-basis: 60%;
@@ -102,6 +115,9 @@ li{
     height: 750px;
     background-color: var(--bk-blue);
 }
+.start > hr{
+    border: 1px solid var(--grey);
+}
 .padding{
     padding-top: 40px;
 }
@@ -112,13 +128,14 @@ li{
     flex-direction: column;
 }
 .arrow{
+
     font-size: 70px;
     position: absolute;
-     bottom: 70px;
+     bottom: 40px;
      text-decoration: none;
      color: black;
 }
-hr{
+.colonna > hr{
     color: var(--grey);
 }
 .container-70{
@@ -138,19 +155,25 @@ hr{
     justify-content: space-between;
 }
 .colonna{
-    padding-left: 20px;
+    text-indent: 1em;
+    /* padding-left: 20px; */
     gap: 50px;
     border: 1px solid grey;
     text-align: left;
     flex-basis: calc(100% / 3 - 150px);
     padding-bottom: 20px;
 }
-
+.fa-check{
+    color: var(--blue-box);
+}
+li i{
+    margin-right: 1em;
+}
 p > span:first-of-type{
     color: gray;
 }
 .btn-inizia{
-    padding-inline: 80px;
+    padding-inline:2em;
     padding-block: 20px;
     border: none;
     margin: 0 auto;
@@ -164,19 +187,18 @@ p > span:first-of-type{
     text-align: center;
 }
 .colonna-100{
-    /* text-align: center; */
+    padding-bottom: 2em;
     max-width: 100%;
     border: 1px solid var(--grey);
 }
 .colonna-100 span{ 
     justify-content: center;
     max-width: 100%;
-    border: 1px solid var(--grey);
 }
 
 .testa{
     text-align: center;
-    padding: 2em;
+    padding: 1em;
     border-bottom: 1px solid var(--grey);
 }
 .contatti{
@@ -237,12 +259,11 @@ p > span:first-of-type{
     max-width: 100%;
 }
 .btn-partner{
-    background-color: none;
     border: 1px solid black;
     color: black;
-    max-width: 9em;
-    padding: 10px 20px;
-
+    max-width: 12em;
+    padding-block: 1em;
+    padding-inline: 2em;
 }
 .sezione-link{
     gap: 2em;
@@ -276,6 +297,9 @@ p > span:first-of-type{
     padding-top: 1em;
     text-align: left;
 }
+.final-main a{
+    color: var(--blue-box);
+}
 .title{
     font-size: 50px;
     padding-bottom: 3em;
@@ -290,3 +314,37 @@ p > span:first-of-type{
 .final-main > h3{
     padding-block: 4em;
 }
+.list-container{
+    justify-content: space-between;
+    flex-basis: calc(100% / 5);
+}
+footer{
+    color: white;
+    background-color: var(--black-foot);
+}
+.list-container > div > ul{
+    line-height: 2;
+}
+.list-container > div > ul > li:last-child{
+   padding-bottom: 2em;
+}
+.list-container > div > h3{
+   padding-top: 3em;
+   padding-bottom: 2em;
+}
+.container-70 > hr{
+    margin-bottom: 2em;
+    max-width: 5em;
+    border: 1px solid white;
+}
+.container-70 i:last-child{
+    margin-left: 0.5em;
+}
+.container-70 i{
+    margin-right: 0.5em;
+}
+.container-70 span:last-child{
+    margin-block: 1em;
+}
+
+  
