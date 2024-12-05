@@ -134,8 +134,8 @@ hr{
     gap: 20px;
 }
 .colonne{
-   
-    justify-content: space-around;
+   padding-bottom: 5em;
+    justify-content: space-between;
 }
 .colonna{
     padding-left: 20px;
@@ -161,5 +161,47 @@ p > span:first-of-type{
 #section-link > .colonna.flex-column > span:first-of-type {    border-bottom: 1px solid var(--grey);
     margin: 0 auto;
     padding: 5px;
+    text-align: center;
+}
+.colonna-100{
     /* text-align: center; */
+    max-width: 100%;
+    border: 1px solid var(--grey);
+}
+.colonna-100 span{ 
+    justify-content: center;
+    max-width: 100%;
+    border: 1px solid var(--grey);
+}
+
+.testa{
+    text-align: center;
+    padding: 2em;
+    border-bottom: 1px solid var(--grey);
+}
+.contatti{
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .contatti > h2{
+    flex-basis: 50%;
+   
+}
+.contatti > div{
+    flex-basis: 50%;
+   
+} */
+.btn{
+    background-color: var(--blue-box);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.colonna-100 > span, 
+.colonna-100 > p{
+    flex-basis: 50%;
 }
